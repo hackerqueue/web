@@ -1,0 +1,546 @@
+
+body{
+	padding-bottom:0;font-size: 12px;
+}
+/*header*/
+.header{width:100%;position:sticky;left:0;right:0;margin:0 auto;top:0;z-index:100; border-bottom: 1px solid #dfdfdf;background:#FFF;}
+.headK{background:#f2f2f2;}
+.logo{display: block;}
+.logo img{height:100%;display: block; width: auto;}
+/*footer*/
+.foot{background:#f2f2f2;}
+.ftLog{display: block;margin:0 auto;}
+.ftLog img{height:100%;display: block;}
+.ftFl{width:100%;}
+.ftFla{color:#252525;display: block;}
+.ftId{width:100%;}
+.ftIa{display: block;}
+.ftIa img{width:100%;display: block;}
+.ftC{color:#252525;width:100%;text-align: center;}
+@media  screen and ( min-width:1280px){
+/*header*/
+.header{padding:28px 0 20px;}
+.headK{width:900px;height: 60px;border-radius:30px;padding-left: 36px;padding-right: 18px;}
+.logo{height:28px;}
+/*Menu*/
+.Menu{ display: block;width:100%;flex:1;padding-left:100px;}
+.Menu ul{}
+.MenuU li{position: relative}
+.MenuU li:last-child{margin-left:15px}
+.MenuA{line-height:44px;font-size:18px;color:#262626; position: relative;border-radius:22px;padding:0 20px;display: block;}
+.MenuU li .MenuA:hover,.MenuU li .on {background:#040404; color:#FFF;}
+.hd_nav{ display: none;}
+/*footer*/
+.foot{padding:0.7rem 5% 0.2rem;}
+.ftLog{height:0.44rem;}
+.ftFl{padding:0.5rem 0 0.15rem;}
+.ftFla{font-size:0.26rem;line-height:0.5rem;}
+.ftFla:hover{color:#ffaa2d;text-decoration: underline;}
+.ftId{width:100%;padding:0.1rem 0 0.65rem;}
+.ftIa{width:0.26rem; margin:0 0.19rem;}
+.ftC{font-size:0.24rem;line-height:0.5rem}
+}
+@media screen and (max-width:1280px ) and ( min-width:1080px){
+/*header*/
+.header{padding:25px 0 18px;}
+.headK{width:900px;height:54px;border-radius:27px;padding-left: 34px;padding-right: 16px;}
+.logo{height:26px;}
+/*Menu*/
+.Menu{ display: block;width:100%;flex:1;padding-left:90px;}
+.Menu ul{}
+.MenuU li{position: relative}
+.MenuU li:last-child{margin-left:15px}
+.MenuA{line-height:40px;font-size:16px;color:#262626; position: relative;border-radius:20px;padding:0 20px;display: block;}
+.MenuU li .MenuA:hover,.MenuU li .on {background:#040404; color:#FFF;}
+.hd_nav{ display: none;}
+/*footer*/
+.foot{padding:0.7rem 5% 0.2rem;}
+.ftLog{height:0.44rem;}
+.ftFl{padding:0.5rem 0 0.15rem;}
+.ftFla{font-size:0.26rem;line-height:0.5rem;}
+.ftFla:hover{color:#ffaa2d;text-decoration: underline;}
+.ftId{width:100%;padding:0.1rem 0 0.65rem;}
+.ftIa{width:0.26rem; margin:0 0.19rem;}
+.ftC{font-size:0.24rem;line-height:0.5rem}
+}
+@media screen and (max-width:1080px ) and ( min-width:750px){
+/*header*/
+.header{padding:0.4rem 4% 0.3rem;}
+.headK{width:100%;height:1.1rem;border-radius:0.55rem;padding-left:4%;overflow:hidden }
+.logo{height:0.5rem;}
+.hd_nav{ position:relative; z-index:999;height:100%;width:1.5rem;background:#000;padding-left:0.5rem;}
+.hd_nav i{top:50%;margin-top:-2px;position:absolute;display:inline-block;height:0.06rem;width:0.8rem;border-radius:0.03rem;background:#edd006;}
+.hd_nav:before{margin-top: -0.25rem;}
+.hd_nav:after{margin-top:0.17rem;}
+.hd_nav:before,.hd_nav:after{content: '';position:absolute;top:50%;display:inline-block;height:0.06rem;width:0.8rem;border-radius:0.03rem;background:#edd006;transition:0.2s;}
+.hd_nav.active i{display:none;}
+.hd_nav.active:before{transform: rotate(45deg);}
+.hd_nav.active:after{transform: rotate(-45deg);}
+.hd_nav.active:before,.hd_nav.active:after{margin-top:0;background:#edd006;}
+.Menu{position:fixed;width:100%;height:100vh;top:0;left:100%;z-index:-1;transition:0.5s;-webkit-backdrop-filter: blur(25px);backdrop-filter: blur(25px);}
+.Menuwap{left:0;transition:0.5s;}
+.MenuU{padding:1.8rem 5% 1rem;}
+.MenuU li{position: relative;width:100%; margin-bottom:0.5rem;}
+.MenuA{line-height:1.2rem;font-size:0.4rem;color:#262626; position: relative;border-radius:0.6rem;text-align: center;width:100%; display: block;}
+.MenuU li .MenuA:hover,.MenuU li .on {background:#040404; color:#FFF;}
+/*footer*/
+.foot{padding:0.9rem 5% 0.4rem;}
+.ftLog{height:0.55rem;}
+.ftFl{padding:0.5rem 0 0.15rem;}
+.ftFla{font-size:0.3rem;line-height:0.5rem;}
+.ftFla:hover{color:#ffaa2d;text-decoration: underline;}
+.ftId{width:100%;padding:0.1rem 0 0.65rem;}
+.ftIa{width:0.32rem; margin:0 0.19rem;}
+.ftC{font-size:0.28rem;line-height:0.5rem}
+}
+@media only screen and (max-width:750px){
+/*header*/
+.header{}
+.headK{width:100%;height:1.6rem;padding-left:4%;overflow:hidden }
+.logo{height:0.7rem;}
+	
+.hd_nav{ position:relative; z-index:999;height:100%;width:1.5rem;background:#000;padding-left:0.5rem;}
+.hd_nav i{top:50%;margin-top:-0.03rem;position:absolute;display:inline-block;height:0.1rem;width:1rem;border-radius:0.05rem;background:#edd006;}
+.hd_nav:before{margin-top: -0.35rem;}
+.hd_nav:after{margin-top:0.27rem;}
+.hd_nav:before,.hd_nav:after{content: '';position:absolute;top:50%;display:inline-block;height:0.1rem;width:1rem;border-radius:0.05rem;background:#edd006;transition:0.2s;}
+.hd_nav.active i{display:none;}
+.hd_nav.active:before{transform: rotate(45deg);}
+.hd_nav.active:after{transform: rotate(-45deg);}
+.hd_nav.active:before,.hd_nav.active:after{margin-top:0;background:#edd006;}
+	
+.Menu{position:fixed;width:100%;height:100vh;top:0;left:100%;z-index:-1;transition:0.5s;-webkit-backdrop-filter: blur(25px);backdrop-filter: blur(25px);}
+.Menuwap{left:0;transition:0.5s;}
+.MenuU{padding:1.8rem 5% 1rem;}
+.MenuU li{position: relative;width:100%; margin-bottom:0.5rem;}
+.MenuA{line-height:1.2rem;font-size:0.4rem;color:#262626; position: relative;border-radius:0.6rem;text-align: center;width:100%; display: block;}
+.MenuU li .MenuA:hover,.MenuU li .on {background:#040404; color:#FFF;}
+/*footer*/
+.foot{padding:0.9rem 4% 0.4rem;}
+.ftLog{height:0.7rem;}
+.ftFl{padding:0.54rem 0 0.1rem;}
+.ftFla{font-size:0.4rem;line-height:0.6rem;}
+.ftId{width:100%;padding:0.1rem 0 0.65rem;}
+.ftIa{width:0.46rem; margin:0 0.2rem;}
+.ftC{font-size:0.38rem;line-height:0.6rem}
+}
+/**/
+.Indtit h3{font-weight: 500}
+/*xFaith*/
+.AboXfa{width:100%;}
+.AboXfaT{width:100%;}
+.AboXfaT img{display: block;}
+.AboXfaD{color:#171717;}
+.AboXfaD p{font-weight: 300}
+/**/
+.AboSetL{background: linear-gradient(135deg,#d0ff2d 40%,#ffa13d);position: relative;color:#171717;}
+.AboSetR{background:#161616;;position: relative; color:#FFF;}
+.AboSetT img{display: block;}
+.AboSetL h3{font-weight: 500}
+.AboSetLp{color:#262626;font-weight: 300}
+.AboSetLT{overflow:hidden;position: absolute;}
+.AboSetLT img{width:100%; display: block;}
+.AboSetLG{overflow:hidden;position: absolute;z-index: 2;background:#FFF;color:#212121;}
+.AboSetLGh{font-weight: 500}
+.AboSetLGp{font-weight: 300}
+.AboSetRT{overflow:hidden;position: absolute;}
+.AboSetRT img，.AboSetRG img{width:100%; display: block;}
+.AboSetRG{;position: absolute;z-index:2}
+.AboSetRp{font-weight: 300}
+/*Our role in the industry chain*/
+.AboOur{width:100%;}
+.AboOurD{width:100%;max-width: 1300px;}
+.AboOurD img{width: 100%;display: block;}
+/*Strategic Partners*/
+.AboStr{width:100%;}
+.AboStrD{width: 100%;}
+.AboStrA img{height:100%;display: block;width: auto;}
+/*Branding customers*/
+.AboBra{width:100%;}
+.AboBraD{width: 100%;}
+.AboBraA img{height:100%;display: block;width: auto;}
+/*JOBS*/
+.Abojob{background:rgba(242,242,242,0.71);margin:0 auto;}
+.AbojobT img{width:100%;display: block;}
+.AbojobD{color:#171717;}
+.AbojobD h3{font-weight: 500}
+.AbojobP h4{font-weight: 500}
+.AbojobP p{font-weight: 300}
+/*联系我们*/
+.Abocon{width:100%;}
+.AboconD{color:#171717;}
+.AboconP{width: 100%;text-align:center;font-weight: 300}
+@media  screen and ( min-width:1080px){
+.Indtit h3{font-size: .5rem;line-height: .9rem;}
+/*xFaith*/
+.AboXfa{padding:1.5rem 4%;}
+.AboXfaT img{width:40%;}
+.AboXfaD{font-size:0.3rem;line-height:0.45rem;padding-left:26%;padding-top:1rem;}
+.AboXfaD p{}
+/**/
+.AboSet{padding: 0.4rem 2.5% 1.2rem;}
+.AboSetL{width:63%;border-radius:0.25rem;height:6rem;padding:0.4rem;}
+.AboSetR{width:35.5%;border-radius:0.25rem;height:6rem;padding:0.4rem;}
+.AboSetT{}
+.AboSetT img{width:1rem;}
+.AboSetL h3{font-size: .5rem;line-height: .6rem; margin-top:0.15rem;}
+.AboSetLp{font-size:0.2rem;line-height:0.38rem;padding-right:45%;padding-top:0.15rem;}
+.AboSetLT{border-radius:0.2rem;width:30%;top:-0.4rem;right:0.3rem;}
+.AboSetLG{border-radius:0.16rem;width:18%;top:3.8rem;right:24%;padding:0.2rem;}
+.AboSetLG img{width:0.6rem;}
+.AboSetLGh{font-size:0.25rem;line-height:0.3rem;padding:0.1rem 0}
+.AboSetLGp{font-size:0.14rem;line-height:0.18rem;}
+.AboSetRp{font-size:0.2rem;line-height:0.38rem;padding-top:0.7rem;}
+.AboSetRT{border-radius:0.16rem;width:50%;bottom:-1.4rem;left:0.3rem;}
+.AboSetRG{width:20%;top:3.5rem;left:46%;}
+/*Our role in the industry chain*/
+.AboOur{padding:1rem 5% 0.5rem;}
+.AboOurD{ margin:1rem auto 0;}
+/*Strategic Partners*/
+.AboStr{padding:1rem 4% 0.5rem;}
+.AboStrD{padding-top:0.9rem}
+.AboStrA{height:0.36rem;margin:0 0.3rem 0.4rem;;}
+/*Branding customers*/
+.AboBra{padding:1rem 4% 1rem;}
+.AboBraD{padding-top:0.9rem}
+.AboBraA{height:0.5rem;margin:0 0.38rem 0.45rem;;}
+/*JOBS*/
+.Abojob{width:95%;padding:0.6rem 2.5%;border-radius:0.25rem;}
+.AbojobT{width:43.8%}
+.AbojobD{width:52.6%;}
+.AbojobD h3{font-size:0.6rem;line-height:2rem; margin-top: 0.3rem;}
+.AbojobP{}
+.AbojobP h4{font-size:0.3rem;line-height:0.6rem;}
+.AbojobP p{font-size:0.2rem;line-height:0.44rem; }
+/*联系我们*/
+.Abocon{padding:1.1rem 4% 1rem;}
+.AboconD{margin-top:0.4rem;}
+.AboconP{font-size: .34rem;line-height: .5rem;}
+}
+@media screen and (max-width:1080px ) and ( min-width:750px){
+.Indtit h3{font-size: .45rem;line-height: .8rem;}
+/*xFaith*/
+.AboXfa{padding:1.5rem 4%;}
+.AboXfaT img{width:40%;}
+.AboXfaD{font-size:0.35rem;line-height:0.6rem;padding-left:15%;padding-top:1rem;}
+.AboXfaD p{}
+/**/
+.AboSet{padding: 0.4rem 2.5% 1.2rem;}
+.AboSetL{width:100%;border-radius:0.25rem;height:9rem;padding:0.6rem; margin-bottom:0.6rem;}
+.AboSetR{width:100%;border-radius:0.25rem;height:7rem;padding:0.6rem;}
+.AboSetT{}
+.AboSetT img{width:1.8rem;}
+.AboSetL h3{font-size: .7rem;line-height: .8rem; margin-top:0.3rem;}
+.AboSetLp{font-size:0.32rem;line-height:0.6rem;padding-right:42%;padding-top:0.3rem;}
+.AboSetLT{border-radius:0.2rem;width:28%;top:-0.8rem;right:0.6rem;}
+.AboSetLG{border-radius:0.16rem;width:20%;top:5.2rem;right:20%;padding:0.3rem;}
+.AboSetLG img{width:1rem;}
+.AboSetLGh{font-size:0.37rem;line-height:0.5rem;padding:0.15rem 0}
+.AboSetLGp{font-size:0.26rem;line-height:0.3rem;}
+.AboSetRp{font-size:0.32rem;line-height:0.6rem;padding-right:42%;padding-top:0.3rem;}
+.AboSetRT{border-radius:0.16rem;width:25%;top:1.1rem;right:10%;}
+.AboSetRG{width:13%;top:0.5rem;right:4%;}
+/*Our role in the industry chain*/
+.AboOur{padding:1.2rem 5% 0.7rem;}
+.AboOurD{ margin:1.2rem auto 0;}
+/*Strategic Partners*/
+.AboStr{padding:1.2rem 4% 0.7rem;}
+.AboStrD{padding-top:1.1rem}
+.AboStrA{height:0.6rem;margin:0 0.45rem 0.5rem;;}
+/*Branding customers*/
+.AboBra{padding:1.2rem 4% 1.2rem;}
+.AboBraD{padding-top:1.1rem}
+.AboBraA{height:0.75rem;margin:0 0.5rem 0.5rem;;}
+/*JOBS*/
+.Abojob{width:95%;padding:0.6rem 2.5%;border-radius:0.25rem;}
+.AbojobT{width:43.8%}
+.AbojobD{width:52.6%;}
+.AbojobD h3{font-size:0.7rem;line-height:1.5rem; margin-top: 0.3rem;}
+.AbojobP{}
+.AbojobP h4{font-size:0.4rem;line-height:0.8rem;}
+.AbojobP p{font-size:0.3rem;line-height:0.5rem; }
+/*联系我们*/
+.Abocon{padding:1.4rem 4% 1.3rem;}
+.AboconD{margin-top:0.7rem;}
+.AboconP{font-size: .44rem;line-height: .6rem;}
+}
+@media only screen and (max-width:750px){
+.Indtit h3{font-size: .55rem;line-height: .8rem;}
+/*xFaith*/
+.AboXfa{padding:1.5rem 4%;}
+.AboXfaT img{width:50%;}
+.AboXfaD{font-size:0.44rem;line-height:0.8rem;padding-left:0;padding-top:1rem;}
+.AboXfaD p{}
+/**/
+.AboSet{padding: 0.4rem 4% 1.2rem;}
+.AboSetL{width:100%;border-radius:0.25rem;padding:0.6rem; margin-bottom:0.6rem;}
+.AboSetR{width:100%;border-radius:0.25rem;padding:0.6rem;}
+.AboSetT{}
+.AboSetT img{width:1.8rem;}
+.AboSetL h3{font-size: .7rem;line-height: .8rem; margin-top:0.3rem;}
+.AboSetLp{font-size:0.4rem;line-height:0.6rem;padding-top:0.3rem;}
+.AboSetLT{border-radius:0.2rem;width:50%;position: static;margin-top: 0.5rem;}
+.AboSetLG{border-radius:0.16rem;width:45%;bottom:1rem;left:40%;padding:0.4rem;}
+.AboSetLG img{width:1.3rem;}
+.AboSetLGh{font-size:0.46rem;line-height:0.7rem;padding:0.15rem 0}
+.AboSetLGp{font-size:0.35rem;line-height:0.45rem;}
+.AboSetRp{font-size:0.4rem;line-height:0.6rem;padding-right:42%;padding-top:0.5rem;}
+.AboSetRT{border-radius:0.16rem;width:30%;top:1.8rem;left:62%;}
+.AboSetRG{width:15%;top:1rem;right:4%;}
+/*Our role in the industry chain*/
+.AboOur{padding:1.2rem 5% 0.7rem;}
+.AboOurD{ margin:1.2rem auto 0;}
+/*Strategic Partners*/
+.AboStr{padding:1.2rem 4% 0.7rem;}
+.AboStrD{padding-top:1.1rem}
+.AboStrA{height:0.65rem;margin:0 0.45rem 0.5rem;;}
+/*Branding customers*/
+.AboBra{padding:1.2rem 4% 1.2rem;}
+.AboBraD{padding-top:1.1rem}
+.AboBraA{height:0.88rem;margin:0 0.4rem 0.5rem;;}
+/*JOBS*/
+.Abojob{width:92%;padding:0.8rem 6%;border-radius:0.25rem;}
+.AbojobT{width:100%}
+.AbojobD{width:100%;}
+.AbojobD h3{font-size:0.8rem;line-height:1.5rem; margin-top: 0.3rem;}
+.AbojobP{}
+.AbojobP h4{font-size:0.5rem;line-height:1rem;}
+.AbojobP p{font-size:0.4rem;line-height:0.7rem; }
+/*联系我们*/
+.Abocon{padding:1.4rem 4% 1.3rem;}
+.AboconD{margin-top:0.7rem;}
+.AboconP{font-size: .5rem;line-height: .6rem;}
+}
+/*******************************************************/
+
+/**/
+.Indsma .Indtit{text-align:center;}
+.Indtip{text-align:center;color:#202020;}
+.Indtip p{font-weight: 300;}
+.IndsmaB img{width:100%;display: block;}
+/*ready*/
+.IndreaA img{width:100%; display: block;}
+/*What's Distinctive*/
+.InddisB{position: relative;overflow:hidden; }
+.InddisB .swiper-slide{position: relative; width: 100%; height:100%;overflow:hidden;}
+.InddisI{position: relative;overflow: hidden;background:rgba(242,242,242,0.71)}
+.InddisI img{width:100%;display: block;}
+.InddisImg{position:absolute;}
+.InddisI1-1{left:8%;top:12%;width:47%}
+.InddisI1-2{right:9%;top:8%;width:43%}
+.InddisI2-1{left:8%;top:8%;width:44%}
+.InddisI2-2{right:9%;top:12%;width:43%}
+.InddisI3-1{left:8%;top:8%;width:45%}
+.InddisI3-2{right:8%;top:8%;width:43%}
+.InddisI4-1{left:9%;top:25%;width:36%}
+.InddisI4-2{right:7%;top:9%;width:48%}
+.InddisI6-1{left:5%;bottom:9%;width:90%}
+.InddisI6-2{left:5%;top:7%;width:90%}
+
+.IndstoImg{overflow: hidden;}
+.InddisN{color:#171717;}
+.InddisN h3{font-weight: 500;}
+.InddisN p{}
+/*App Store and Favorite Apps*/
+.IndstoH{text-align:center;color:#171717;}
+.IndstoH p{font-weight: 300}
+.IndstoK{position: relative;}
+.IndstoB{position: relative;overflow:hidden;}
+.IndstoB .swiper-slide{position: relative; width: 100%; height:100%;overflow:hidden;}
+.IndstoI{width:100%;position: relative;}
+.IndstoI img{width:100%;display: block;}
+.IndstoImg{overflow: hidden;}
+.IndstoImz{left:50%;transform: translate(-50%,0);position: absolute;z-index:1}
+.IndstoP{text-align: center;color:#171717;}
+.IndstoP h3{color:#222;}
+.IndstoP p{}
+.Intnext,.Intprev{border-radius:50%;border:1px solid #737373;margin:0;top:50%;transform: translate(0,-50%);}
+.Intnext{background-image: url(../images/icon/right-jt.png);}
+.Intprev{background-image: url(../images/icon/left-jt.png);}
+.Intnext{right:0;}
+.Intprev{left:0;}
+.Intnext:after, .Intprev:after {font-size:0.34rem;color:#848484;}
+.Intnext:hover,.Intprev:hover{background-color:#000;border:1px solid #000;}
+.Intnext:hover:after,.Intprev:hover:after{color:#FFF;}
+.Inddian .swiper-pagination-bullet{border-radius:50%;background:#FFF;border:1px solid #161616;opacity: 1;}
+.Inddian .swiper-pagination-bullet-active {background:#161616;}
+/*apps*/
+.Indapa{background:#FFF;box-shadow:0 0 12px rgba(0,0,0,0.1);}
+.Indapa img{display:block;}
+.Indapa:hover{box-shadow:0 0 12px rgba(0,0,0,0.2);}
+/*watch*/
+.IndwatD{width:100%;max-width: 1300px;}
+.Indwata{display: block;}
+.IndwatI{width:100%; margin:0 auto;}
+.IndwatI img{width:100%;display: block;}
+.IndwatP{text-align: center;color:#171717;}
+.IndwatP h3{}
+.IndwatP p{font-weight: 300}
+@media  screen and ( min-width:1080px){
+.Indsma{padding:1.5rem 4% 0.6rem;}
+.Indsma .Indtit{padding: 0 11%;}
+.Indtip{padding: 0 14%;color:#202020;font-size:0.22rem;line-height:0.5rem; margin-top:0.5rem;}
+.IndsmaB{width: 44%; margin:1.2rem auto 0.8rem}
+.Indsmalog{width:40%; margin:0.5rem auto;}
+/*ready*/
+.Indrea{padding:1.2rem 4% 0.6rem;}
+.IndreaD{width:66%; margin:1rem auto 0;}
+.IndreaA{width:13%; margin-left:8.75%; margin-bottom:0.8rem;}
+.IndreaA:nth-child(5n+1){margin-left:0;}
+/*What's Distinctive*/
+.Inddis{padding:1.2rem 4% 0;}
+.InddisB{margin:1.1rem auto 0;width:100%;;padding-bottom:1.5rem;}
+.InddisI{width:52%;border-radius:0.4rem;height:7.5rem;}
+.IndstoImg{border-radius:0.28rem;}
+.InddisN{width:38%; margin-right:4%}
+.InddisN h3{font-size:0.34rem;line-height:0.5rem; margin-bottom:0.4rem;}
+.InddisN p{font-size:0.22rem;line-height:0.45rem; margin-bottom:1.5rem;}
+/*App Store and Favorite Apps*/
+.Indsto{padding:0.5rem 4% 0.6rem;}
+.IndstoH{padding: 0 11%;font-size:0.22rem;line-height:0.5rem; margin-top:0.5rem;}
+.IndstoK{padding:0 11%; margin-top: 1rem;}
+.IndstoB{height:11rem;}
+.IndstoImg{border-radius:0.28rem;}
+.IndstoImw1{bottom:-1.7rem;width:24%;}
+.IndstoImw2{bottom:-1.4rem;width:44%;}
+.IndstoImw3{bottom:-1.7rem;width:24%;}
+.IndstoP{padding:1.6rem 19% 0}
+.IndstoP h3{font-size:0.3rem;line-height:0.4rem; margin-bottom:0.2rem;margin-top:.6rem}
+.IndstoP p{font-size:0.2rem;line-height:0.4rem;}
+.Intnext,.Intprev{width:0.8rem; height:0.8rem;background-size: 32px;}
+.Intnext:after, .Intprev:after {font-size:0.34rem;}
+.Inddian .swiper-pagination-bullet{width:0.16rem; height:0.16rem;}
+.Inddian .swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 0.1rem;}
+.Inddian .swiper-pagination-bullets {bottom:0.4rem;}
+/*apps*/
+.Indapp{padding:1.2rem 4% 0.6rem;}
+.IndapD{ margin-top:1rem;}
+.Indapa{border-radius:0.2rem;width:17%;height:2.7rem;margin-bottom:0.3rem;}
+.Indapa img{width:60%;}
+/*watch*/
+.Indwat{padding:1.2rem 4% 0.8rem;}
+.IndwatD{ margin:1rem auto 0;}
+.Indwata{width:17%;margin-bottom:0.5rem;}
+.IndwatP{margin-top: 0.35rem;}
+.IndwatP h3{line-height:0.4rem;font-size:0.24rem;}
+.IndwatP p{line-height:0.3rem;font-size:0.2rem;}
+}
+@media screen and (max-width:1080px ) and ( min-width:750px){
+.Indsma{padding:1.5rem 4% 0.6rem;}
+.Indsma .Indtit{padding: 0 10%;}
+.Indtip{padding: 0 12%;color:#202020;font-size:0.24rem;line-height:0.55rem; margin-top:0.5rem;}
+.IndsmaB{width: 46%; margin:1.2rem auto 0.8rem}
+.Indsmalog{width:42%; margin:0.5rem auto;}
+/*What's Distinctive*/
+.Inddis{padding:1.2rem 4% 0;}
+.InddisB{margin:1.1rem auto 0;width:100%;padding-bottom:1.5rem;}
+.InddisI{width:52%;border-radius:0.4rem;height:7rem;}
+.IndstoImg{border-radius:0.28rem;}
+.InddisN{width:38%; margin-right:4%}
+.InddisN h3{font-size:0.38rem;line-height:0.5rem; margin-bottom:0.4rem;}
+.InddisN p{font-size:0.24rem;line-height:0.45rem; margin-bottom:1.5rem;}
+/*App Store and Favorite Apps*/
+.Indsto{padding:0.5rem 4% 0.6rem;}
+.IndstoH{padding: 0 10%;font-size:0.22rem;line-height:0.5rem; margin-top:0.5rem;}
+.IndstoK{padding:0 10%; margin-top: 1rem;}
+.IndstoB{height:11rem;}
+.IndstoImg{border-radius:0.28rem;}
+.IndstoImw1{bottom:-1.7rem;width:24%;}
+.IndstoImw2{bottom:-1.4rem;width:44%;}
+.IndstoImw3{bottom:-1.7rem;width:24%;}
+.IndstoP{padding:1.8rem 19% 0}
+.IndstoP h3{font-size:0.34rem;line-height:0.4rem; margin-bottom:0.2rem;margin-top:.5rem}
+.IndstoP p{font-size:0.22rem;line-height:0.4rem;}
+.Intnext,.Intprev{width:0.8rem; height:0.8rem;background-size: .4rem;}
+.Intnext:after, .Intprev:after {font-size:0.34rem;}
+.Inddian .swiper-pagination-bullet{width:0.16rem; height:0.16rem;}
+.Inddian .swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 0.1rem;}
+.Inddian .swiper-pagination-bullets {bottom:0.4rem;}
+/*ready*/
+.Indrea{padding:1.2rem 4% 0.6rem;}
+.IndreaD{width:66%; margin:1rem auto 0;}
+.IndreaA{width:13%; margin-left:8.75%; margin-bottom:0.8rem;}
+.IndreaA:nth-child(5n+1){margin-left:0;}
+/*apps*/
+.Indapp{padding:1.2rem 4% 0.6rem;}
+.IndapD{ margin-top:1rem;}
+.Indapa{border-radius:0.2rem;width:17%;height:2.7rem;margin-bottom:0.3rem;}
+.Indapa img{width:60%;}
+/*watch*/
+.Indwat{padding:1.2rem 4% 0.8rem;}
+.IndwatD{ margin:1rem auto 0;}
+.Indwata{width:17%;margin-bottom:0.5rem;}
+.IndwatP{margin-top: 0.35rem;}
+.IndwatP h3{line-height:0.4rem;font-size:0.24rem;}
+.IndwatP p{line-height:0.3rem;font-size:0.2rem;}
+}
+@media only screen and (max-width:750px){
+.Indsma{padding:1.5rem 4% 0.6rem;}
+.Indtip{font-size:0.38rem;line-height:0.6rem; margin-top:0.5rem;}
+.IndsmaB{width: 82%; margin:1.2rem auto 0.8rem}
+.Indsmalog{width:42%; margin:0.7rem auto;}
+/*What's Distinctive*/
+.Inddis{padding:1.2rem 4% 0;}
+.InddisB{margin-top:1rem;padding-bottom:1rem;}
+.InddisI{width:100%;border-radius:0.4rem;height:10rem;}
+.IndstoImg{border-radius:0.28rem;}
+.InddisN{width:100%; margin-top: 0.8rem}
+.InddisN h3{font-size:0.5rem;line-height:0.6rem; margin-bottom:0.4rem;}
+.InddisN p{font-size:0.34rem;line-height:0.5rem; margin-bottom:0.3rem;}
+/*App Store and Favorite Apps*/
+.Indsto{padding:0.5rem 4% 0.6rem;}
+.IndstoH{font-size:0.34rem;line-height:0.55rem; margin-top:0.5rem;}
+.IndstoK{ margin-top:0.8rem;}
+.IndstoB{height:10rem;}
+.IndstoImg{border-radius:0.28rem;}
+.IndstoImw1{bottom:-1.7rem;width:30%;}
+.IndstoImw2{bottom:-1.4rem;width:55%;}
+.IndstoImw3{bottom:-1.7rem;width:30%;}
+.IndstoP{padding:2rem 0% 0}
+.IndstoP h3{font-size:0.45rem;line-height:0.5rem; margin-bottom:0.2rem;margin-top:.4rem}
+.IndstoP p{font-size:0.32rem;line-height:0.45rem;}
+.Intnext,.Intprev{width:0.9rem; height:0.9rem;background-size: .54rem}
+.Intnext:after, .Intprev:after {font-size:0.34rem;}
+.Inddian .swiper-pagination-bullet{width:0.18rem; height:0.18rem;}
+.Inddian .swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 0.1rem;}
+.Inddian .swiper-pagination-bullets {bottom:0.2rem;}
+/*ready*/
+.Indrea{padding:1rem 6% 0.4rem;}
+.IndreaD{width:100%; margin:1rem auto 0;}
+.IndreaA{width:15%; margin-left:6.25%; margin-bottom:0.86rem;}
+.IndreaA:nth-child(5n+1){margin-left:0;}
+/*apps*/
+.Indapp{padding:1rem 4% 0.6rem;}
+.IndapD{ margin-top:1rem;justify-content:center;}
+.Indapa{border-radius:0.2rem;width:30.666%;height:2.5rem;margin-bottom:0.5rem; margin-left:4%}
+.Indapa img{width:80%;}
+.Indapa:nth-child(3n+1){margin-left:0;}
+/*watch*/
+.Indwat{padding:1.2rem 4% 0.8rem;}
+.IndwatD{ margin:1rem auto 0;}
+.Indwata{width:48%;margin-bottom:0.8rem;}
+	.IndwatI img{width:90%; margin:0 auto;}
+.IndwatP{margin-top: 0.5rem;}
+.IndwatP h3{line-height:0.6rem;font-size:0.45rem;}
+.IndwatP p{line-height:0.5rem;font-size:0.3rem;}
+}
+/*
+height: calc(100% - 55px); 
+display:flex;justify-content:space-between;align-items:center; flex-wrap:wrap;align-content:center
+|flex-start|flex-end|center|space-between|space-around
+
+overflow: hidden;text-overflow:ellipsis;white-space: nowrap;
+display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;
+
+left:0;top:50%;transform: translate(0,-50%);
+
+transition:0.5s;
+.IndEnvT:before,.IndEnvT:after{display:block;content:'';position: absolute;}*/
+@media  screen and ( min-width:1280px){
+}
+@media screen and (max-width:1280px ) and ( min-width:1080px){
+}
+@media screen and (max-width:1080px ) and ( min-width:750px){
+}
+@media only screen and (max-width:750px){
+}
