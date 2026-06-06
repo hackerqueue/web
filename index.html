@@ -141,7 +141,7 @@
 				<div class="swiper-slide">					
 					<div class="IndstoI">
 						<div class="IndstoImg"><img src="images/znot/IndstoI01.webp"></div>
-						<div class="IndstoImz IndstoImw1"><img src="images/znot/IndstoS01.webp"></div>
+						<div class="IndstoImz IndstoImw1"><img data-src="images/znot/IndstoS01.webp" alt=""></div>
 					</div>				
 					<div class="IndstoP Huans">
 						<h3>Easy to develop Apps</h3>
@@ -161,7 +161,7 @@
 				<div class="swiper-slide">					
 					<div class="IndstoI">
 						<div class="IndstoImg"><img src="images/znot/IndstoI03.webp"></div>
-						<div class="IndstoImz IndstoImw3"><img src="images/znot/IndstoS03.webp"></div>
+						<div class="IndstoImz IndstoImw3"><img data-src="images/znot/IndstoS03.webp" alt=""></div>
 					</div>				
 					<div class="IndstoP Huans">
 						<h3>Powerful platform capabilities for Apps</h3>
@@ -365,6 +365,15 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+
+// Defer large animated webp loading until everything else is ready
+window.addEventListener('load', function() {
+  var imgs = document.querySelectorAll('img[data-src]');
+  for (var i = 0; i < imgs.length; i++) {
+    imgs[i].src = imgs[i].getAttribute('data-src');
+    imgs[i].removeAttribute('data-src');
+  }
+});
 
 </script>
 </html>
